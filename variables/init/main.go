@@ -3,6 +3,34 @@ package main
 import "fmt"
 
 func main() {
+	var age int = 40
+	fmt.Println("Age:", age)
+
+	// another way of declaring variables in go is by using ":="
+	name := "Johnson"
+	fmt.Println("your name is: ", name)
+
+	// you can declare and not use variables in go using "_" It will run without any errors
+	position := "1st"
+	_ = position
+
+	// multiple declaration
+	var (
+		number    int
+		girl      bool
+		firstname string
+	)
+	fmt.Println(number, girl, firstname)
+
+	open, man := true, false
+	open, man = man, open
+	close, woman := false, true
+	_, _ = close, woman
+	println(open, man)
+
+	var a, b, c int
+	fmt.Println(a, b, c)
+
 	var variable1 = 100
 	var variable2 = "hello"
 	var variable3 = 3.142
@@ -28,4 +56,17 @@ func main() {
 
 	fmt.Printf("the value of variable7 is : %d\n", variable7)
 	fmt.Printf("the value of variable8 is : %d\n", variable8)
+
+	// this is for declaring multiple variables of different types
+
+	var var1, var2, var3 = 2, "yes", 47.448756
+
+	fmt.Printf("the value of var1 is : %d\n", var1)
+	fmt.Printf("the type of var1 is : %T\n\n", var1)
+
+	fmt.Printf("the value of var2 is : %s\n", var2)
+	fmt.Printf("the type of var2 is : %T\n\n", var2)
+
+	fmt.Printf("the value of var3 is : %f\n", var3)
+	fmt.Printf("the type of var3 is : %T\n\n", var3)
 }
