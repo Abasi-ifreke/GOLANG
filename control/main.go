@@ -30,11 +30,45 @@ func main() {
 
 	// USING BREAK STATEMENT
 
-	for i := 0; i < 10; i++ {
-		fmt.Println(i)
+	// for i := 0; i < 10; i++ {
+	// 	fmt.Println(i)
 
-		if i < 7 {
-			break
+	// 	if i < 7 {
+	// 		break
+	// 	}
+	// }
+
+	// USING CONTINUE STATEMENT
+
+	// y := 1
+
+	// for y < 9 {
+
+	// 	if y == 5 {
+	// 		y = y + 2
+	// 		continue
+	// 	}
+	// 	fmt.Printf("the value of y is %d \n", y)
+	// 	y++
+	// }
+
+	// GOTO STATEMENT
+
+	x := 0
+
+label1:
+
+	for x < 10 {
+
+		if x == 4 {
+
+			x = x + 2
+			goto label1
 		}
+
+		fmt.Printf("the value of x is %d \n", x)
+
+		x++
 	}
+
 }
